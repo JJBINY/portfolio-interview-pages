@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="산업 AI 에이전트, Document AI, RAG 시스템을 설계하고 구현한 강주빈의 기술 포트폴리오입니다."
+    />
+    <meta name="theme-color" content="#edf3f8" />
+    <title>강주빈 · AI System Engineer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' rx='16' fill='%232764ff'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-size='24' font-weight='700' fill='white'%3EJK%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles-glass-refresh.css" />
+    <script type="module" src="./js/app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <div class="polar-ambient" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <header class="site-header" data-site-header>
+      <a class="wordmark" href="#profile" aria-label="강주빈 포트폴리오 홈">
+        <span class="wordmark__monogram" data-profile-initials>JK</span>
+        <span class="wordmark__text">
+          <strong data-profile-name>강주빈</strong>
+          <small data-profile-role>AI SYSTEM ENGINEER</small>
+        </span>
+      </a>
+      <div class="site-runtime" aria-label="포트폴리오 버전과 로컬 AI 처리 용량">
+        <span class="site-version" data-site-version>beta:0.0.3</span>
+        <time
+          class="site-release-date"
+          data-site-released-at
+          datetime="2026-08-13T13:14:52+09:00"
+        >2026.08.13.13.14.52 released</time>
+        <span
+          class="site-capacity"
+          data-runtime-capacity
+          aria-label="동시 추론 1건, 예상 답변 완료 시간 약 20초에서 40초"
+          title="현재 공개 데모 측정값 · 동시 추론 1건 · 예상 답변 약 20–40초"
+        >
+          <span class="site-capacity__signal" aria-hidden="true"></span>
+          <strong data-runtime-active>1 RUN</strong>
+          <span class="site-capacity__separator" aria-hidden="true">·</span>
+          <span class="site-capacity__latency" data-runtime-latency>≈20–40 SEC</span>
+        </span>
+      </div>
+
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a class="nav-priority" href="#profile">소개</a>
+        <a class="nav-priority" href="#work">프로젝트</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="profile" aria-labelledby="hero-title" data-landing-section>
+        <div class="hero__intro reveal-on-scroll">
+          <div class="hero__status">
+            <span data-profile-status>AI AGENT · DOCUMENT AI · RAG</span>
+          </div>
+          <p class="eyebrow" data-profile-eyebrow>PORTFOLIO · beta:0.0.3</p>
+          <h1 id="hero-title" data-profile-headline>
+            복잡한 현장 지식을<br />검증 가능한 AI 시스템으로.
+          </h1>
+          <p class="hero__summary" data-profile-summary>
+            문서와 운영 데이터를 LLM이 활용할 수 있는 구조로 만들고, 자연어 질의를 검색·데이터 조회·도구 실행으로 연결합니다.
+          </p>
+          <div class="hero__actions">
+            <button class="button button--primary hero__agent-cta" type="button" data-open-agent>
+              AI에게 질문하기 <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-agent-preview reveal-on-scroll" aria-label="AI 포트폴리오 대화 미리보기">
+          <header class="hero-agent-preview__header">
+            <div>
+              <i aria-hidden="true"></i>
+              <span>PORTFOLIO AGENT</span>
+            </div>
+            <small>PUBLIC KNOWLEDGE · READY</small>
+          </header>
+          <div class="hero-agent-preview__messages">
+            <article class="hero-agent-preview__message hero-agent-preview__message--user">
+              <span>YOU</span>
+              <p>강주빈은 어떤 엔지니어인가요?</p>
+            </article>
+            <article class="hero-agent-preview__message hero-agent-preview__message--agent">
+              <span class="glass-orb glass-orb--small" aria-hidden="true"><i></i></span>
+              <span>AI</span>
+              <p>문서와 운영 데이터를 LLM이 활용할 수 있는 구조로 만들고, 자연어 질의를 검색·데이터 조회·도구 실행으로 연결합니다. AI Agent·멀티모달 RAG부터 모델 서빙과 Observability까지 서비스 흐름을 함께 설계하는 엔지니어입니다.</p>
+              <div class="hero-agent-preview__trace" aria-label="답변 실행 단계 예시">
+                <span class="is-complete">검색</span>
+                <span class="is-complete">그래프 연결</span>
+                <span class="is-active">근거 검증</span>
+              </div>
+            </article>
+          </div>
+          <button
+            type="button"
+            class="hero-agent-preview__open"
+            data-open-agent
+            data-question="강주빈은 어떤 엔지니어인가요?"
+          >
+            이 대화를 직접 이어가기 <span aria-hidden="true">↗</span>
+          </button>
+        </aside>
+
+        <div class="hero__stats" aria-label="포트폴리오 요약" data-profile-stats></div>
+      </section>
+
+      <section class="experience-section" id="experience" aria-labelledby="experience-title" data-landing-section>
+        <header class="section-heading reveal-on-scroll">
+          <div>
+            <p class="section-number">01 / EXPERIENCE</p>
+            <h2 id="experience-title">연구를 구현으로,<br />구현을 운영 가능한 구조로.</h2>
+          </div>
+          <p>
+            산업 현장의 문서와 운영 데이터를 다루며 요구 정의부터 설계·구현·평가·배포까지 연결해 왔습니다.
+          </p>
+        </header>
+
+        <article class="career-record reveal-on-scroll">
+          <div class="career-record__period">
+            <span>2025.05 — PRESENT</span>
+            <small>AI RESEARCH INSTITUTE</small>
+          </div>
+          <div class="career-record__role">
+            <p>와이즈넛 AI연구소 · 연구원</p>
+            <h3>Applied AI Engineer</h3>
+            <p class="career-record__secondary-role">Research Engineer</p>
+          </div>
+          <div class="career-record__scope">
+            <p>도메인 특화 AI Agent·Agentic RAG</p>
+            <p>Document AI·멀티모달 계층 검색</p>
+            <p>Query Understanding·NL2SQL·Tool Use/MCP</p>
+            <p>LLM Serving·Kubernetes·Langfuse Observability</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title" data-landing-section>
+        <header class="section-heading reveal-on-scroll">
+          <div>
+            <p class="section-number">02 / SELECTED WORK</p>
+            <h2 id="work-title">구현 목록보다<br />판단의 흐름을.</h2>
+          </div>
+          <p>
+            문제의 제약, 제가 맡은 범위, 선택한 구조와 한계를 하나의 근거 흐름으로 확인할 수 있습니다.
+          </p>
+        </header>
+
+        <div data-projects-root></div>
+      </section>
+
+      <section class="interview-section" id="interview" aria-labelledby="interview-title" data-landing-section>
+        <div class="interview-section__copy reveal-on-scroll">
+          <p class="section-number">AFTER READING / ASK THE SYSTEM</p>
+          <span class="interview-section__project" data-context-project-label>STEEL DOMAIN AI AGENT</span>
+          <h2 id="interview-title" data-context-agent-title>읽다가 궁금해진<br />설계 판단이 있나요?</h2>
+          <p data-context-agent-copy>마지막으로 살펴본 프로젝트의 구현 경계와 근거를 이어서 질문할 수 있습니다.</p>
+        </div>
+
+        <div class="interview-prompts reveal-on-scroll" aria-label="현재 프로젝트 추천 질문" data-context-agent-prompts></div>
+      </section>
+
+      <section
+        class="portfolio-detail"
+        data-portfolio-detail
+        aria-live="polite"
+        aria-labelledby="portfolio-detail-title"
+        hidden
+      ></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span data-profile-name>강주빈</span> · <span data-profile-role>AI System Engineer</span>
+        · <span class="footer-version" data-site-version>beta:0.0.3</span>
+        · <time
+          class="footer-release-date"
+          data-site-released-at
+          datetime="2026-08-13T13:14:52+09:00"
+        >2026.08.13.13.14.52 released</time>
+      </p>
+      <nav class="site-footer__links" aria-label="프로필 링크" data-profile-links hidden></nav>
+      <p>Local-first · Evidence-linked · Public data only</p>
+    </footer>
+
+    <section
+      class="interview-workspace"
+      id="interview-workspace"
+      data-agent-workspace
+      data-mode="peek"
+      aria-labelledby="agent-title"
+    >
+      <div class="agent-shell">
+        <header class="agent-header">
+          <div class="agent-header__identity">
+            <span class="agent-header__mark glass-orb" aria-hidden="true"><i></i></span>
+            <div>
+              <p><span class="live-dot" aria-hidden="true"></span> PORTFOLIO AI</p>
+              <h2 id="agent-title">AI에게 질문하기</h2>
+              <p class="agent-context-breadcrumb" data-agent-context>전체 포트폴리오</p>
+            </div>
+          </div>
+          <div class="agent-header__actions">
+            <span class="provider-badge" data-provider-badge>CHECKING</span>
+            <button class="icon-button" type="button" data-reset-agent aria-label="대화 초기화">↺</button>
+            <button class="icon-button" type="button" data-peek-agent aria-label="인터뷰 최소화">−</button>
+          </div>
+        </header>
+
+        <div class="agent-peek-summary" data-agent-peek-summary>
+          <div class="agent-peek-summary__status">
+            <span data-agent-peek-role>AI READY</span>
+            <i aria-hidden="true"></i>
+            <small data-agent-peek-status>PUBLIC KNOWLEDGE</small>
+          </div>
+          <p data-agent-peek-message>포트폴리오의 프로젝트와 설계 판단을 질문해보세요.</p>
+          <div class="agent-peek-summary__composer" aria-hidden="true">
+            <span>대화를 열어 질문하기</span>
+            <i>↗</i>
+          </div>
+        </div>
+
+        <div class="agent-body">
+          <section class="agent-conversation" aria-label="AI 인터뷰 대화">
+            <div class="agent-notice" data-agent-notice>
+              로컬 provider 상태를 확인하고 있습니다. 연결되지 않으면 검증된 mock 답변으로 전환됩니다.
+            </div>
+            <div
+              class="agent-transcript"
+              data-agent-transcript
+              role="log"
+              aria-live="polite"
+              aria-relevant="additions text"
+              aria-busy="false"
+            ></div>
+
+            <div class="agent-suggestions-shell" data-agent-suggestions-shell>
+              <div class="agent-suggestions" data-agent-suggestions aria-label="추천 질문"></div>
+              <span class="agent-suggestions__hint" aria-hidden="true">MORE →</span>
+            </div>
+
+            <form class="agent-composer" data-agent-form>
+              <label class="sr-only" for="agent-question">포트폴리오에 대해 질문하기</label>
+              <textarea
+                id="agent-question"
+                name="question"
+                rows="1"
+                maxlength="500"
+                placeholder="프로젝트, 기술, 경험, 가치관에 대해 질문해보세요"
+                data-agent-input
+              ></textarea>
+              <button type="submit" aria-label="질문 보내기" data-agent-submit>↑</button>
+            </form>
+            <p class="agent-footnote">ENTER TO SEND · SHIFT + ENTER FOR LINE BREAK</p>
+          </section>
+
+          <aside class="agent-evidence" id="agent-inspector" aria-label="답변 실행 경로와 근거">
+            <header class="agent-evidence__header">
+              <div>
+                <p>EXECUTION INSPECTOR</p>
+                <h3>실행 관측</h3>
+              </div>
+              <span data-agent-stage>READY</span>
+            </header>
+
+            <div class="agent-evidence__tabs" role="tablist" aria-label="실행 정보 보기">
+              <button
+                type="button"
+                role="tab"
+                id="trace-tab"
+                aria-controls="trace-panel"
+                aria-selected="true"
+                data-agent-tab="trace"
+              >
+                Live trace <span data-trace-event-count>0</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="evidence-tab"
+                aria-controls="evidence-panel"
+                aria-selected="false"
+                data-agent-tab="evidence"
+              >
+                Evidence <span data-evidence-count>0</span>
+              </button>
+            </div>
+
+            <div class="agent-evidence__panels">
+              <section
+                class="agent-evidence__panel"
+                id="trace-panel"
+                role="tabpanel"
+                aria-labelledby="trace-tab"
+                data-agent-panel="trace"
+              >
+                <div class="live-trace" data-agent-trace></div>
+              </section>
+              <section
+                class="agent-evidence__panel"
+                id="evidence-panel"
+                role="tabpanel"
+                aria-labelledby="evidence-tab"
+                data-agent-panel="evidence"
+                hidden
+              >
+                <div class="agent-evidence__content" data-agent-evidence>
+                  <div class="evidence-empty">
+                    <span>01</span>
+                    <strong>질문을 선택해보세요.</strong>
+                    <p>답변이 생성되면 사용된 프로젝트 근거가 여기에 표시됩니다.</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <p class="sr-only" data-agent-live-status role="status" aria-live="polite"></p>
+    </section>
+
+    <dialog
+      class="diagram-lightbox"
+      id="diagram-attachment-dialog"
+      aria-labelledby="diagram-dialog-title"
+      aria-describedby="diagram-dialog-question"
+      data-diagram-dialog
+    >
+      <div class="diagram-lightbox__shell">
+        <header class="diagram-lightbox__header">
+          <div>
+            <p data-diagram-dialog-project>PUBLIC PORTFOLIO DIAGRAM</p>
+            <h2 id="diagram-dialog-title" data-diagram-dialog-title>아키텍처 다이어그램</h2>
+          </div>
+          <button
+            type="button"
+            class="diagram-lightbox__close"
+            aria-label="다이어그램 닫기"
+            data-diagram-dialog-close
+            autofocus
+          >
+            닫기
+          </button>
+        </header>
+
+        <div class="diagram-lightbox__body">
+          <section class="diagram-lightbox__visual" aria-label="아키텍처 시각화">
+            <div class="diagram-lightbox__host" data-diagram-dialog-host></div>
+            <p data-diagram-dialog-description></p>
+          </section>
+
+          <aside class="diagram-lightbox__narrative" aria-label="다이어그램 설명">
+            <section class="diagram-lightbox__question">
+              <span>이 그림이 답하는 질문</span>
+              <p id="diagram-dialog-question" data-diagram-dialog-question></p>
+            </section>
+            <section class="diagram-lightbox__takeaway">
+              <span>핵심</span>
+              <strong data-diagram-dialog-takeaway></strong>
+            </section>
+            <section class="diagram-lightbox__guide">
+              <h3>읽는 순서</h3>
+              <ol data-diagram-dialog-guide></ol>
+            </section>
+            <section class="diagram-lightbox__scope">
+              <h3>이 그림의 범위</h3>
+              <p data-diagram-dialog-scope></p>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </dialog>
+
+    <template id="message-template">
+      <article class="message">
+        <header>
+          <span class="message__avatar glass-orb glass-orb--small" data-message-avatar aria-hidden="true"><i></i></span>
+          <span data-message-role></span>
+          <time data-message-time></time>
+        </header>
+        <details class="message-live-trace" data-message-trace hidden>
+          <summary>
+            <span data-message-trace-status>실행 경로 준비 중</span>
+            <strong data-message-trace-count>0 / 6</strong>
+          </summary>
+          <div class="message-live-trace__content" data-message-trace-content></div>
+        </details>
+        <div class="message__body" data-message-body></div>
+        <div class="message__sources" data-message-sources></div>
+        <div class="message__attachments" data-message-attachments hidden></div>
+      </article>
+    </template>
+  </body>
+</html>
